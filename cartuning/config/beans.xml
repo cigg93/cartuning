@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/mvc 
+	http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+	http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-4.3.xsd
+	http://www.springframework.org/schema/jee 
+	http://www.springframework.org/schema/jee/spring-jee-4.3.xsd">
+
+
+	<!-- 不扫描controller,扫描Service , Repository注解-->
+	<context:component-scan base-package="com.cc">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<!-- 数据源配置 -->
+    <!-- 读入属性文件 -->
+    <!-- 当存在多个Properties文件时，配置就需使用locations -->
+    <!-- ignoreUnresolvablePlaceholders为是否忽略不可解析的 Placeholder，
+    	如配置了多个PropertyPlaceholderConfigurer，则需设置为true 
+    -->
+    <bean id="propertyConfig"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:mysql.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+    </bean>
+	
+	<!-- mysql -->
+	<bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<!-- 数据库基本信息配置 -->
+		<property name="driverClassName" value="${mysql.jdbc.driver}" />
+		<property name="url" value="${mysql.jdbc.url}" />
+		<property name="username" value="${mysql.jdbc.username}" />
+		<property name="password" value="${mysql.jdbc.password}" />		
+		
+	</bean>	
+	
+	<!-- 会话工厂-->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+		<property name="dataSource" ref="druidDataSource" />
+		
+	</bean>	
+	
+	<!-- 事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="druidDataSource" />
+	</bean>
+	
+	<!-- 声明式事务 -->
+	<!-- 使用注解方式进行事务管理 -->
+	<!-- 1、基于注解的声明式事务管理配置
+	     2、基于注解的声明式事务管理配置,xml配置
+	 -->
+	
+	<!-- 开启事务控制的注解支持 -->
+	<!-- <tx:annotation-driven transaction-manager="transactionManager" /> -->
+	<!-- 事务切面配置 -->  
+	<!-- <tx:advice id="advice" transaction-manager="transactionManager">  
+	    <tx:attributes>  
+	        <tx:method name="update*" propagation="REQUIRED" read-only="false" rollback-for="java.lang.Exception"/>  
+	        <tx:method name="insert" propagation="REQUIRED" read-only="false"/>  
+	    </tx:attributes>  
+	</tx:advice>  -->
+	
+	<!-- 事务通知 -->
+	<!-- <aop:config>  
+	    <aop:pointcut id="testService" expression="execution (* com.baobao.service.MyBatisService.*(..))"/>  
+	    <aop:advisor advice-ref="advice" pointcut-ref="testService"/>  
+	</aop:config> -->
+	
+	<!-- 此配置可以很好的工作，并注入类（不是接口）
+	1、tx:advice   这种 是用 aop方式管理事物
+annotation-driven 这种是注解方式管理事物 
+第一种方式，需要在spring配置文件配置一些参数
+第二种方式，需要在 类里 加一些注解进行事物管理
+用一种就行，没必须都用
+2、如果不用@Transactional这个注解实现事务就不需要tx:annotation-driven~ 
+如果用aop实现事务需要在aop:config中声明事务通知（tx:advice）~
+
+这两个是二选一~  都依赖于transactionManager~
+	 -->
+	 <tx:annotation-driven transaction-manager="transactionManager"/>
+     <aop:aspectj-autoproxy proxy-target-class="true"/>  
+</beans>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="Flat Dark Web Login Form Responsive Templates, Iphone Widget Template, Smartphone login forms,Login form, Widget Template, Responsive Templates, a Ipad 404 Templates, Flat Responsive Templates" />
+<link href="http://localhost:8080/cartuning/css/style.css" rel='stylesheet' type='text/css' />
+<!--webfonts-->
+
+<!--//webfonts-->
+<script src="http://localhost:8080/cartuning/js/jquery-3.1.1.min.js"></script>
+<script>
+$.fn.serializeObject = function()    
+{    
+   var o = {};    
+   var a = $("#form1").serializeArray();    
+   $.each(a, function() {    
+       if (o[this.name]) {    
+           if (!o[this.name].push) {    
+               o[this.name] = [o[this.name]];    
+           }    
+           o[this.name].push(this.value || '');    
+       } else {    
+           o[this.name] = this.value || '';    
+       }    
+   });    
+   return o;    
+}; 
+$(document).ready(function(c) {
+	$('.close').on('click', function(c){
+		$('.login-form').fadeOut('slow', function(c){
+	  		$('.login-form').remove();
+		});
+	});
+	$("#submit").click(function(){
+		var data = $("#form1").serializeObject();
+		data = JSON.stringify(data);
+		alert(data);
+		$.ajax(
+			{
+				type:"post",
+				contentType:"application/json",
+				url:"http://localhost:8080/cartuning/user/login.do",
+				data:data,
+				dataType:"json",
+				success:function(result){
+					alert(JSON.stringify(result));
+				}
+				
+			}
+		);
+		
+	});
+});
+</script>
+</head>
+<body>
+	<h1></h1>
+	
+	 <!--SIGN UP-->
+	<div class="login-form">
+		<div class="close"></div>
+		<div class="head-info">
+			<label class="lbl-1"></label>
+			<label class="lbl-2"> </label>
+			<label class="lbl-3"> </label>
+		</div>
+		<div class="clear"> </div>
+		<div class="avtar">
+			<img src="http://localhost:8080/cartuning/images/avtar.png" />
+		</div>
+		<form id="form1" name="form1" action="" method="post">
+			<input type="text" name="username" class="text" placeholder="请输入用户名" onfocus="if(this.placeholder=='请输入用户名') {placeholder=''}" onblur="if (this.placeholder == '') {this.placeholder = '请输入用户名';}" >
+			<div class="key">
+				<input type="password" name="password" placeholder="请输入密码" onfocus="if(this.placeholder=='请输入密码') {this.placeholder=''}" onblur="if (this.placeholder == '') {this.placeholder = '请输入密码';}">
+			</div>
+		</form>
+		<div class="signin">
+			<input type="button" name="submit" id="submit" value="Login" >
+		</div>
+		
+	</div>
+	<div class="copy-rights">
+			<p>Copyright 2016年 <a href="#" target="_self" title="教务系统">毕设教务系统</a>
+	</div>
+
+</body>
+</html>

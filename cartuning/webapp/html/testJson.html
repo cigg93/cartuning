@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+<script type="text/javascript">
+	var person = {
+		name:"jack",
+		age:20
+	};
+	function testJson(){
+		document.getElementById("button").value=person.name;
+	}
+</script>
+</head>
+<body>
+<input type="button" id="button" name="button" value="testJson" onclick="testJson()"/>
+</body>
+</html>

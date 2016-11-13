@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品页面</title>
+<script type="text/javascript" src="http://localhost:8080/json/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	var jsonObj = {
+		name:"袜子",
+		price:99
+	};
+	var data = JSON.stringify(jsonObj);
+	alert(JSON.stringify(jsonObj));
+	$(document).ready(function(){
+		$("button").click(function(){
+			/* $.post(
+				"http://localhost:8080/json/itemsCustom/insertItemCustoms.do",
+				jsonObj,
+				function(data,status){
+					alert("数据：\n" + data + "\n状态：" + status);
+				}
+			); */
+			$.ajax(
+				{
+					url:"http://localhost:8080/json/itemsCustom/insertItemCustoms.do",
+					data:data,
+					contentType:"application/json",
+					type:"POST",
+					dataType:"json",
+					success:function(qwer,status,xhr){
+						alert(qwer);
+						/* var x = JSON.parse(qwer); */
+						if(qwer.result == "success"){
+							alert("成功提示： " + xhr.status + " " + xhr.statusText);
+							$("#msg").text(qwer.msg);
+						}
+						
+					}
+				}
+			)
+		});
+	});
+
+</script>
+</head>
+<body>
+<div id="msg">243243</div>
+<button>新增</button>
+</body>
+</html>
