@@ -1,14 +1,15 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <title>Auto-Tuning Website | Home :: </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="http://localhost:8080/cartuning/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!--slider-->
-<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.gallery.js"></script>
+<script type="text/javascript" src="http://localhost:8080/cartuning/js/modernizr.custom.53451.js"></script>
+<script type="text/javascript" src="http://localhost:8080/cartuning/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://localhost:8080/cartuning/js/jquery.gallery.js"></script>
 <script type="text/javascript">
 		$(function() {
 		$('#dg-container').gallery({
@@ -21,7 +22,7 @@
 <div class="wrap">
   <div class="header">
     <div class="logo">
-      <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+      <h1><a href="http://localhost:8080/cartuning/index.jsp"><img src="http://localhost:8080/cartuning/images/logo.png" alt=""></a></h1>
     </div>
     <div class="h_right">
       <div class="drp-dwn">
@@ -49,22 +50,35 @@
         </ul>
       </div>
       <div class="header_top_right">
-        <div class="login"> <span><a href="login.html"><img src="images/login.png" alt="" title="login"></a></span> </div>
+        <div class="login">
+        	<span>
+        		<a href="http://localhost:8080/cartuning/html/login.html">
+        			<img src="http://localhost:8080/cartuning/images/login.png" alt="" title="login">
+        		</a>
+        	</span>
+        </div>
         <div class="shopping_cart">
-          <div class="cart_img"> <img src="images/header_cart.png"> </div>
-          <div class="cart"> <a href="#" title="View my shopping cart" rel="nofollow"> <span class="cart_title">Cart</span> <span class="no_product">(empty)</span> </a> </div>
+          <div class="cart_img">
+          	<img src="http://localhost:8080/cartuning/images/header_cart.png">
+          </div>
+          <div class="cart">
+          	<a href="#" title="View my shopping cart" rel="nofollow">
+          		<span class="cart_title">Cart</span>
+          		<span class="no_product">(empty)</span>
+          	</a>
+          </div>
         </div>
         <div class="clear"></div>
       </div>
     </div>
     <div class="clear"></div>
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费模板</a></div>
+    <div class="copyrights">Collect from <a href="#">免费模板</a></div>
     <div class="h_main">
       <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="maintain.html">Maintains</a></li>
-        <li><a href="repair.html">Repairs</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="active"><a href="http://localhost:8080/cartuning/index.jsp">Home</a></li>
+        <li><a href="http://localhost:8080/cartuning/html/maintain.html">Maintains</a></li>
+        <li><a href="http://localhost:8080/cartuning/html/repair.html">Repairs</a></li>
+        <li><a href="http://localhost:8080/cartuning/html/contact.html">Contact</a></li>
       </ul>
       <div class="search">
         <form>
@@ -77,38 +91,102 @@
   </div>
   <div class="container">
     <section id="dg-container" class="dg-container">
-      <div class="dg-wrapper"> <a href="#"><img src="images/1.jpg" alt="image1" /></a> <a href="#"><img src="images/2.jpg" alt="image2" /></a> <a href="#"><img src="images/3.jpg" alt="image3" /></a> <a href="#"><img src="images/4.jpg" alt="image4" /></a> <a href="#"><img src="images/5.jpg" alt="image5" /></a> <a href="#"><img src="images/6.jpg" alt="image1" /></a> <a href="#"><img src="images/7.jpg" alt="image2" /></a> <a href="#"><img src="images/8.jpg" alt="image3" /></a> </div>
+      <div class="dg-wrapper">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/1.jpg" alt="image1" />
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/2.jpg" alt="image2" />
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/3.jpg" alt="image3" />
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/4.jpg" alt="image4" />
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/5.jpg" alt="image5" />
+        </a>
+        <a href="http://localhost:8080/cartuning/html/details.html">
+        	<img src="http://localhost:8080/cartuning/images/6.jpg" alt="image1" />
+        </a>
+        <a href="http://localhost:8080/cartuning/html/details.html">
+        	<img src="http://localhost:8080/cartuning/images/7.jpg" alt="image2" />
+        </a>
+        <a href="http://localhost:8080/cartuning/html/details.html">
+        	<img src="http://localhost:8080/cartuning/images/8.jpg" alt="image3" />
+        </a>
+      </div>
     </section>
   </div>
   <div class="main">
     <div class="section group">
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic1.jpg"></a> <a href="details.html">
-        <h3>Lorem Ipsum is</h3>
-        </a> </div>
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic3.jpg"></a> <a href="details.html">
-        <h3>Lorem is simply </h3>
-        </a> </div>
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic2.jpg"></a> <a href="details.html">
-        <h3>Lorem Ipsum is</h3>
-        </a> </div>
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic4.jpg"></a> <a href="details.html">
-        <h3>Lorem is simply </h3>
-        </a> </div>
+      <div class="grid_1_of_4 images_1_of_4">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/pic1.jpg">
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+        	<h3>Lorem Ipsum is</h3>
+        </a>
+      </div>
+      <div class="grid_1_of_4 images_1_of_4">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/pic3.jpg">
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+        	<h3>Lorem is simply </h3>
+        </a>
+      </div>
+      <div class="grid_1_of_4 images_1_of_4">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/pic2.jpg">
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+        	<h3>Lorem Ipsum is</h3>
+        </a>
+      </div>
+      <div class="grid_1_of_4 images_1_of_4">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/pic4.jpg">
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+        	<h3>Lorem is simply </h3>
+        </a>
+      </div>
       <div class="clear"></div>
     </div>
     <div class="section group btm">
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic5.jpg"></a> <a href="details.html">
-        <h3>Lorem Ipsum is</h3>
-        </a> </div>
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic6.jpg"></a> <a href="details.html">
-        <h3>Lorem is simply </h3>
-        </a> </div>
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic7.jpg"></a> <a href="details.html">
-        <h3>Lorem Ipsum is</h3>
-        </a> </div>
-      <div class="grid_1_of_4 images_1_of_4"> <a href="details.html"><img src="images/pic8.jpg"></a> <a href="details.html">
-        <h3>Lorem is simply </h3>
-        </a> </div>
+      <div class="grid_1_of_4 images_1_of_4">
+	   	  <a href="http://localhost:8080/cartuning/html/details.html">
+	   		 <img src="http://localhost:8080/cartuning/images/pic5.jpg">
+	   	  </a>
+	   	  <a href="http://localhost:8080/cartuning/html/details.html">
+	     	<h3>Lorem Ipsum is</h3>
+	      </a>
+      </div>
+      <div class="grid_1_of_4 images_1_of_4">
+	      <a href="http://localhost:8080/cartuning/html/details.html">
+	      	<img src="http://localhost:8080/cartuning/images/pic6.jpg">
+	      </a> <a href="http://localhost:8080/cartuning/html/details.html">
+	        <h3>Lorem is simply </h3>
+	      </a>
+      </div>
+      <div class="grid_1_of_4 images_1_of_4">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/pic7.jpg">
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+        	<h3>Lorem Ipsum is</h3>
+        </a>
+	  </div>
+      <div class="grid_1_of_4 images_1_of_4">
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+      		<img src="http://localhost:8080/cartuning/images/pic8.jpg">
+      	</a>
+      	<a href="http://localhost:8080/cartuning/html/details.html">
+        	<h3>Lorem is simply </h3>
+        </a>
+      </div>
       <div class="clear"></div>
     </div>
   </div>
@@ -124,15 +202,15 @@
         </ul>
       </div>
       <div class="copy">
-        <p class="w3-link">© All Rights Reserved | More Templates <a href="#" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a> </p>
+        <p class="w3-link">© All Rights Reserved <a href="#" target="_self" title="">cartuning</a></p>
       </div>
     </div>
     <div class="social-icons">
       <ul>
-        <li class="icon1"><a href="#" target="_blank"> </a></li>
-        <li class="icon2"><a href="#" target="_blank"> </a></li>
-        <li class="icon3"><a href="#" target="_blank"> </a></li>
-        <li class="icon4"><a href="#" target="_blank"> </a></li>
+        <li class="icon1"><a href="#" target="_self"> </a></li>
+        <li class="icon2"><a href="#" target="_self"> </a></li>
+        <li class="icon3"><a href="#" target="_self"> </a></li>
+        <li class="icon4"><a href="#" target="_self"> </a></li>
         <div class="clear"></div>
       </ul>
     </div>
