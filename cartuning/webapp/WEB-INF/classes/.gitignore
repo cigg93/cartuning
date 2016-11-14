@@ -1,1 +1,5 @@
-/sqlMap/
+/Servlet.xml
+/beans.xml
+/log4j.properties
+/mybatis-config.xml
+/mysql.properties
