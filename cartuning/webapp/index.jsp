@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -28,23 +29,23 @@
       <div class="drp-dwn">
         <ul>
           <li>
-            <h3>Select ur Language :</h3>
+            <h3> 选择语言 :</h3>
           </li>
           <li>
             <select onChange="window.location=this.options[this.selectedIndex].value">
-              <option value="">English</option>
-              <option value="">German</option>
-              <option value="">French</option>
+              <option value="">英语</option>
+              <option value="">德语</option>
+              <option value="">法语</option>
             </select>
           </li>
           <li>
-            <h3 style="margin-left: 10px;">Currency :</h3>
+            <h3 style="margin-left: 10px;">货币 :</h3>
           </li>
           <li>
             <select onChange="window.location=this.options[this.selectedIndex].value">
-              <option value="">US Dollar-USD</option>
-              <option value="">Euro-EUR</option>
-              <option value="">Indian Rupee-INR</option>
+              <option value="">美元</option>
+              <option value="">欧元</option>
+              <option value="">卢比</option>
             </select>
           </li>
         </ul>
@@ -75,10 +76,10 @@
     <div class="copyrights">Collect from <a href="#">免费模板</a></div>
     <div class="h_main">
       <ul class="nav">
-        <li class="active"><a href="http://localhost:8080/cartuning/index.jsp">Home</a></li>
-        <li><a href="http://localhost:8080/cartuning/html/maintain.html">Maintains</a></li>
-        <li><a href="http://localhost:8080/cartuning/html/repair.html">Repairs</a></li>
-        <li><a href="http://localhost:8080/cartuning/html/contact.html">Contact</a></li>
+        <li class="active"><a href="http://localhost:8080/cartuning/index.jsp">主页</a></li>
+        <li><a href="http://localhost:8080/cartuning/html/maintain.html">保养</a></li>
+        <li><a href="http://localhost:8080/cartuning/html/repair.html">维修</a></li>
+        <li><a href="http://localhost:8080/cartuning/html/contact.html">联系</a></li>
       </ul>
       <div class="search">
         <form>
@@ -190,15 +191,16 @@
       <div class="clear"></div>
     </div>
   </div>
+  
   <div class="footer">
     <div class="f_left">
       <div class="f_nav">
         <ul>
-          <li><a href="">about us</a></li>
-          <li><a href="">site map</a></li>
-          <li><a href="">customer Service</a></li>
-          <li><a href="">search terms</a></li>
-          <li><a href="">contact us</a></li>
+          <li><a href="">关于我们</a></li>
+          <li><a href="">网址</a></li>
+          <li><a href="">顾客服务</a></li>
+          <li><a href="">寻找项目</a></li>
+          <li><a href="">联系我们</a></li>
         </ul>
       </div>
       <div class="copy">
