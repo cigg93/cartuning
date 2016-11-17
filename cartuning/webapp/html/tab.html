@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="http://localhost:8080/cartuning/css/tabulous.css">
+<script src="http://localhost:8080/cartuning/js/jquery-3.1.1.min.js"></script>
+<script src="http://localhost:8080/cartuning/js/tabulous.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.tabs').tabulous({
+        effect: 'scale'
+    });
+});
+</script>
+</head>
+<body>
+    <div class="tabs">
+	    <ul>
+	        <li><a href="#tabs-1">Tab 1</a></li>
+	        <li><a href="#tabs-2">Tab 2</a></li>
+	        <li><a href="#tabs-3">Tab 3</a></li>
+	    </ul>
+	
+	    <div id="tabs_container">
+	        <div id="tabs-1">
+	            <p><a href="#">内容1</a></p>
+	        </div>
+	        <div id="tabs-2">
+	            <p><a href="#">内容2</a></p>
+	        </div>
+	        <div id="tabs-3">
+	            <p><a href="#">内容3</a></p>
+	        </div>
+	    </div>
+	</div>
+
+</body>
+</html>
