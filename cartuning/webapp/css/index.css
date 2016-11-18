@@ -156,7 +156,7 @@ input,button,select,textarea {
 
 .carousel {
     height: 495px;
-    background: url(http://localhost:8080/cartuning/images/carousel.jpg) no-repeat center;
+    background: url(http://localhost:8080/cartuning/images/library2.jpg) no-repeat center;
     margin-top: -6px;
 }
 

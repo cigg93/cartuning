@@ -15,13 +15,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <title>图书馆</title> 
   <script src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
   <script src="<%=basePath%>js/js.js"></script>
-  <link rel="stylesheet" href="<%=basePath%>css/test.css" media="all" /> 
+  <link rel="stylesheet" href="<%=basePath%>css/index.css" media="all" /> 
 </head> 
 <body> 
   <header class="inline-block"> 
 	   <div class="width"> 
 		   <div class="left"> 
-		   		<a href="<%=basePath%>html/test.html"><img alt="首页" src="<%=basePath%>themes/logo.png" /></a> 
+		   		<a href="<%=basePath%>html/test.html"><img alt="首页" src="<%=basePath%>images/icon3.png" /></a> 
 		   </div>
 		   <div class="right">
 		   		<ul class="sub-nav">
