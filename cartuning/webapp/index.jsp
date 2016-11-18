@@ -11,17 +11,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <base href="<%=basePath%>">
   <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <link rel="shortcut icon" href="http://localhost:8080/cartuning/themes/favicon.ico" /> 
+  <link rel="shortcut icon" href="<%=basePath%>themes/favicon.ico" /> 
   <title>图书馆</title> 
-  <script src="http://localhost:8080/cartuning/js/jquery-3.1.1.min.js"></script>
-  <script src="http://localhost:8080/cartuning/js/js.js"></script>
-  <link rel="stylesheet" href="http://localhost:8080/cartuning/css/test.css" media="all" /> 
+  <script src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
+  <script src="<%=basePath%>js/js.js"></script>
+  <link rel="stylesheet" href="<%=basePath%>css/test.css" media="all" /> 
 </head> 
 <body> 
   <header class="inline-block"> 
 	   <div class="width"> 
 		   <div class="left"> 
-		   		<a href="http://localhost:8080/cartuning/html/test.html"><img alt="首页" src="http://localhost:8080/cartuning/themes/logo.png" /></a> 
+		   		<a href="<%=basePath%>html/test.html"><img alt="首页" src="<%=basePath%>themes/logo.png" /></a> 
 		   </div>
 		   <div class="right">
 		   		<ul class="sub-nav">
@@ -119,7 +119,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		<div class="right search">
 		  	<ul class="nav nav-tabs">
 		  		<li><a data-toggle="tab" href="javascript:;" data-href="gcss">馆藏书目</a></li>
-		  		<li class="active"><a data-toggle="tab" href="javascript:;" data-href="tyss"><img src="http://localhost:8080/cartuning/themes/tyss.png"></a></li>
+		  		<li class="active"><a data-toggle="tab" href="javascript:;" data-href="tyss"><img src="<%=basePath%>themes/tyss.png"></a></li>
 		  	</ul>
 		  	<div class="tab-content">
 		  		<div id="gcss" class="tab-pane">
@@ -155,7 +155,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<p>最新动态</p>
   		</div>
   		<div class="left wth-pic">
-  			<img src="http://localhost:8080/cartuning/themes/ctn-img3.jpg">
+  			<img src="<%=basePath%>themes/ctn-img3.jpg">
   		</div>
   		<div class="left">
   			<ul class="ctn-newslist">
@@ -211,14 +211,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<p>快速导航</p>
   		</div>
   		<div class="left wth-pic">
-  			<img src="http://localhost:8080/cartuning/themes/ctn-img2.jpg">
+  			<img src="<%=basePath%>themes/ctn-img2.jpg">
   		</div>
   	</div>
   </div>
   <footer>
   	<div class="width">
   		<div class="left contact">
-  			<h3><img src="http://localhost:8080/cartuning/themes/logo-gray.png" /></h3>
+  			<h3><img src="<%=basePath%>themes/logo-gray.png" /></h3>
   			<p>地址：南京市江宁科学园弘景大道1号</p>
   			<p>电话：025-86118430</p>
   			<p>邮编：211167</p>
@@ -234,10 +234,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	</div>
 	  	<div class="right">
 	  		<div class="inline-block qrcode">
-	  			<img alt="" src="http://localhost:8080/cartuning/themes/qr-weibo.png">
+	  			<img alt="" src="<%=basePath%>themes/qr-weibo.png">
 	  		</div>
 	  		<div class="inline-block qrcode">
-	  			<img alt="" src="http://localhost:8080/cartuning/themes/qr-wechat.png">
+	  			<img alt="" src="<%=basePath%>themes/qr-wechat.png">
 	  		</div>
 	  	</div>
   	</div>
