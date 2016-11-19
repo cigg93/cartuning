@@ -14,14 +14,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <link rel="shortcut icon" href="<%=basePath%>themes/favicon.ico" /> 
   <title>图书馆</title> 
   <script src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
-  <script src="<%=basePath%>js/js.js"></script>
+  <script src="<%=basePath%>js/index.js"></script>
   <link rel="stylesheet" href="<%=basePath%>css/index.css" media="all" /> 
 </head> 
 <body> 
   <header class="inline-block"> 
 	   <div class="width"> 
 		   <div class="left"> 
-		   		<a href="<%=basePath%>html/test.html"><img alt="首页" src="<%=basePath%>images/icon3.png" /></a> 
+		   		<a href="<%=basePath%>html/test.html">个人图书馆</a> 
 		   </div>
 		   <div class="right">
 		   		<ul class="sub-nav">
@@ -36,7 +36,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		   				</div>
 		   			</li>
 		   			<li><a href=""><i class="icon icon-map"></i>网站地图</a></li>
-		   			<li><a href="" target="_self"><i class="icon icon-ask"></i>问馆员</a>
+		   			<li><a href="" target="_self"><i class="icon icon-ask"></i>联系我</a>
 		   			</li>
 		   		</ul>
 		   		
@@ -49,9 +49,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<div class="width">
   		<nav class="menu wth-nav">
   			<ul>
-  				<li class="menu-title">文献资源
+  				<li class="menu-title">历史书籍
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="图书馆馆藏书目">馆藏书目</a></li>
+  						<li class="inline-block left"><a href="" title="图书馆馆藏书目"></a></li>
   						<li class="inline-block left"><a href="" title="图书馆随书光盘系统">随书光盘</a></li>
   						<li class="inline-block left"><a href="" title="中文数据库">中文数据库</a></li>
   						<li class="inline-block left"><a href="" title="外文数据库">外文数据库</a></li>
@@ -118,28 +118,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		</nav>
   		<div class="right search">
 		  	<ul class="nav nav-tabs">
-		  		<li><a data-toggle="tab" href="javascript:;" data-href="gcss">馆藏书目</a></li>
-		  		<li class="active"><a data-toggle="tab" href="javascript:;" data-href="tyss"><img src="<%=basePath%>themes/tyss.png"></a></li>
+		  		<li class="active"><a data-toggle="tab" href="javascript:;" data-href="gcss">所有书目</a></li>
 		  	</ul>
 		  	<div class="tab-content">
-		  		<div id="gcss" class="tab-pane">
+		  		<div id="gcss" class="tab-pane active">
 		  			<form action="" target="_self">
-		  				<input class="input" type="text" placeholder="请输入关键字检索馆藏书目" name="q0" maxlength="80">
+		  				<input class="input" type="text" placeholder="请输入关键字检索所有书目" name="q0" maxlength="80">
 		  				<input type="hidden" name="sType0" value="any">
 		  				<input type="hidden" name="pageSize" value="100">
 		  				<input type="hidden" name="sort" value="score">
 		  				<input type="hidden" name="desc" value="true">
-		  				<input type="submit" name="btn-search" value="">
-		  			</form>
-		  		</div>
-		  		<div id="tyss" class="tab-pane active">
-		  			<form action="" target="_self">
-		  				<input class="input" type="text" placeholder="请输入关键字检索天印资源发现系统" name="sw">
-		  				<input type="hidden" id="x" name="x" value="0_1642">
-		  				<input type="hidden" name="pageSize" value="x">
-		  				<input type="hidden" name="sort" value="score">
-		  				<input type="hidden" name="desc" value="true">
-		  				<input type="submit" name="btn-search" value="">
+		  				<input type="submit" class="btn-search" value="">
 		  			</form>
 		  		</div>
 		  	</div>
@@ -155,37 +144,37 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   			<p>最新动态</p>
   		</div>
   		<div class="left wth-pic">
-  			<img src="<%=basePath%>themes/ctn-img3.jpg">
+  			<img src="<%=basePath%>themes/ctn-img2.jpg">
   		</div>
   		<div class="left">
   			<ul class="ctn-newslist">
   				<li>
   					<span class="separator-block"></span>
-  					<span><a href="">关于近期IEL数据库无法下载的说明</a></span>
+  					<span><a href="">关于********的说明</a></span>
   					<span class="separator-block"></span>
-  					<span class="right c9">2016-11-16</span>
+  					<span class="right c9">2016-11-10</span>
   				</li>
   				<li>
   					<span class="separator-block"></span>
-  					<span><a href="">关于近期IEL数据库无法下载的说明</a></span>
+  					<span><a href="">关于********的说明</a></span>
   					<span class="separator-block"></span>
-  					<span class="right c9">2016-11-16</span>
+  					<span class="right c9">2016-11-10</span>
   				</li>
   				<li>
   					<span class="separator-block"></span>
-  					<span><a href="">关于近期IEL数据库无法下载的说明</a></span>
+  					<span><a href="">关于********的说明</a></span>
   					<span class="separator-block"></span>
-  					<span class="right c9">2016-11-16</span>
+  					<span class="right c9">2016-11-10</span>
   				</li>
   				<li>
   					<span class="separator-block"></span>
-  					<span><a href="">关于近期IEL数据库无法下载的说明</a></span>
+  					<span><a href="">关于********的说明</a></span>
   					<span class="separator-block"></span>
-  					<span class="right c9">2016-11-16</span>
+  					<span class="right c9">2016-11-10</span>
   				</li>
   				<li>
   					<span class="separator-block"></span>
-  					<span><a href="">关于近期IEL数据库无法下载的说明</a></span>
+  					<span><a href="">关于********的说明</a></span>
   					<span class="separator-block"></span>
   					<span class="right c9">2016-11-16</span>
   				</li>
@@ -198,12 +187,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<div class="content-block clear">
   		<div class="left ctn-liblist">
   			<ul>
-  				<li><a href="" target="_self">CNKI中国知网</a></li>
-  				<li><a href="" target="_self">万方数据</a></li>
-  				<li><a href="" target="_self">校外访问</a></li>
-  				<li><a href="" target="_self">新生入馆教育</a></li>
-  				<li><a href="" target="_self">馆长信箱</a></li>
-  				<li><a href="" target="_self">学位论文提交</a></li>
+  				<li><a href="" target="_self">图书1</a></li>
+  				<li><a href="" target="_self">图书2</a></li>
+  				<li><a href="" target="_self">图书3</a></li>
+  				<li><a href="" target="_self">图书4</a></li>
+  				<li><a href="" target="_self">图书5</a></li>
+  				<li><a href="" target="_self">图书6</a></li>
   			</ul>
   		</div>
   		<div class="left wth-nav ctn3 center">
@@ -217,21 +206,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div>
   <footer>
   	<div class="width">
-  		<div class="left contact">
-  			<h3><img src="<%=basePath%>themes/logo-gray.png" /></h3>
-  			<p>地址：南京市江宁科学园弘景大道1号</p>
-  			<p>电话：025-86118430</p>
-  			<p>邮编：211167</p>
-	  	</div>
-	  	<div class="left link">
-	  		<h3>友情链接</h3>
-	  		<ul>
-	  			<li><a href="" target="_self">南京工程学院</a></li>
-	  			<li><a href="" target="_self">江宁高校数字图书馆</a></li>
-	  			<li><a href="" target="_self">江苏省高等学校数字图书馆</a></li>
-	  			<li><a href="" target="_self">中国高等教育文献保障系统</a></li>
-	  		</ul>
-	  	</div>
+  		
 	  	<div class="right">
 	  		<div class="inline-block qrcode">
 	  			<img alt="" src="<%=basePath%>themes/qr-weibo.png">

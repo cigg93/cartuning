@@ -75,17 +75,17 @@ header .left img {
     vertical-align: top;
 }
 .icon-search {
-    background: url(http://localhost:8080/cartuning/themes/icon-search.png) no-repeat center;
+    background: url('http://localhost:8080/cartuning/themes/icon-search.png') no-repeat center;
     margin-right: 10px;
 }
 
 .icon-map {
-	background: url(http://localhost:8080/cartuning/themes/icon-map.png) no-repeat center;
+	background: url('http://localhost:8080/cartuning/themes/icon-map.png') no-repeat center;
 	margin-right: 10px;
 }
 
 .icon-ask {
-	background: url(http://localhost:8080/cartuning/themes/icon-ask.png) no-repeat center;
+	background: url('http://localhost:8080/cartuning/themes/icon-ask.png') no-repeat center;
 	margin-right: 10px;
 }
 
@@ -120,7 +120,7 @@ dl, dt, li, ol, ul {
 }
 
 .sub-search .btn-submit {
-	background: url(http://localhost:8080/cartuning/themes/icon-search.png) no-repeat center;
+	background: url('http://localhost:8080/cartuning/themes/icon-search.png') no-repeat center;
 	border: 0;
 	width: 24px;
 	height: 24px;
@@ -156,7 +156,7 @@ input,button,select,textarea {
 
 .carousel {
     height: 495px;
-    background: url(http://localhost:8080/cartuning/images/library2.jpg) no-repeat center;
+    background: url('http://localhost:8080/cartuning/images/library2.jpg') no-repeat center;
     margin-top: -6px;
 }
 
@@ -231,7 +231,8 @@ input,button,select,textarea {
 }
 .nav-tabs > li {
     float: left;
-    margin-right: 10px;
+    margin-left: 150px;
+    
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -262,6 +263,16 @@ input,button,select,textarea {
 }
 
 
+.tab-content > .tab-pane .btn-search {
+    background: url('http://localhost:8080/cartuning/themes/icon-search.png') no-repeat center;
+    border: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    right: 45px;
+}
+
 .tab-content > .tab-pane {
     position: relative;
     display: none;
@@ -279,15 +290,8 @@ input,button,select,textarea {
     color: #fff;
 }
 
-.tab-content > .tab-pane .btn-search {
-    background: url(http://localhost:8080/cartuning/themes/icon-search.png) no-repeat center;
-    border: 0;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 25px;
-    right: 45px;
-}
+
+
 
 .tab-content > .active {
     display: block;
