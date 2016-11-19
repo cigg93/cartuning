@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <header class="inline-block"> 
 	   <div class="width"> 
 		   <div class="left"> 
-		   		<a href="<%=basePath%>html/test.html">个人图书馆</a> 
+		   		<a href="<%=basePath%>">个人图书馆</a> 
 		   </div>
 		   <div class="right">
 		   		<ul class="sub-nav">
