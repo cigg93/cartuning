@@ -12,16 +12,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <link rel="shortcut icon" href="<%=basePath%>themes/favicon.ico" /> 
-  <title>图书馆</title> 
+  <title>个人图书馆</title> 
   <script src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
   <script src="<%=basePath%>js/index.js"></script>
   <link rel="stylesheet" href="<%=basePath%>css/index.css" media="all" /> 
+  <script type="text/javascript">
+  	$(function(){
+  		
+  	})
+  </script>
 </head> 
 <body> 
   <header class="inline-block"> 
 	   <div class="width"> 
 		   <div class="left"> 
-		   		<a href="<%=basePath%>">个人图书馆</a> 
+		   		<a href="<%=basePath%>"></a> 
 		   </div>
 		   <div class="right">
 		   		<ul class="sub-nav">
@@ -49,69 +54,73 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<div class="width">
   		<nav class="menu wth-nav">
   			<ul>
-  				<li class="menu-title">历史书籍
+  				<li class="menu-title">法律类
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="图书馆馆藏书目"></a></li>
-  						<li class="inline-block left"><a href="" title="图书馆随书光盘系统">随书光盘</a></li>
-  						<li class="inline-block left"><a href="" title="中文数据库">中文数据库</a></li>
-  						<li class="inline-block left"><a href="" title="外文数据库">外文数据库</a></li>
-  						<li class="inline-block left"><a href="" title="试用数据库">试用数据库</a></li>
-  						<li class="inline-block left"><a href="" title="开放获取资源">开放获取资源</a></li>
-  						<li class="inline-block left"><a href="" title="文献传递">文献传递</a></li>
+  						<li class="inline-block left"><a href="" title="刑法的私塾">刑法的私塾</a></li>
+  						<li class="inline-block left"><a href="" title="正义的成本：当法律遇上经济学">正义的成本：当法律遇上经济学</a></li>
+  						<li class="inline-block left"><a href="" title="西窗法雨">西窗法雨</a></li>
+  						<li class="inline-block left"><a href="" title="中华人民共和国民事诉讼法实用版">中华人民共和国民事诉讼法实用版</a></li>
+  						<li class="inline-block left"><a href="" title="刑法一本通:中华人民共和国刑法总成">刑法一本通:中华人民共和国刑法总成</a></li>
+  						<li class="inline-block left"><a href="" title="法律常识全知道">法律常识全知道</a></li>
+  						<li class="inline-block left"><a href="" title="犯罪心理学">犯罪心理学</a></li>
   					</ul>
   				</li>
-  				<li class="menu-title">读者服务
+  				<li class="menu-title">军事类
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="查看个人借阅信息、续借">我的图书馆</a></li>
-  						<li class="inline-block left"><a href="" title="科技查新服务">科技查新</a></li>
-  						<li class="inline-block left"><a href="" title="查收查引">查收查引</a></li>
-  						<li class="inline-block left"><a href="" title="自助借还">自助借还</a></li>
-  						<li class="inline-block left"><a href="" title="自助文印">自助文印</a></li>
-  						<li class="inline-block left"><a href="" title="自助超期处理">自助超期处理</a></li>
-  						<li class="inline-block left"><a href="" title="自助阅览室选座">自助阅览室选座</a></li>
-  						<li class="inline-block left"><a href="" title="信息共享空间预约">信息共享空间预约</a></li>
-  						<li class="inline-block left"><a href="" title="学位论文提交系统">学位论文提交系统</a></li>
-  						<li class="inline-block left"><a href="" title="校外访问数字资源">校外访问</a></li>
-  						<li class="inline-block left"><a href="" title="自助阅览室选座">自助阅览室选座</a></li>
-  						<li class="inline-block left"><a href="" title="校外访问数字资源">校外访问</a></li>
-  						<li class="inline-block left"><a href="" title="馆内WiFi">馆内WiFi</a></li>
-  						<li class="inline-block left"><a href="" title="IP地址测试">IP地址测试</a></li>
+  						<li class="inline-block left"><a href="" title="第二次世界大战战史">《第二次世界大战战史》</a></li>
+  						<li class="inline-block left"><a href="" title="中国人民志愿军抗美援朝战史">中国人民志愿军抗美援朝战史》</a></li>
+  						<li class="inline-block left"><a href="" title="海湾战争">海湾战争 </a></li>
+  						<li class="inline-block left"><a href="" title="科索沃战争">科索沃战争</a></li>
+  						<li class="inline-block left"><a href="" title="反恐战法">反恐战法</a></li>
+  						<li class="inline-block left"><a href="" title="反击黑客">反击黑客</a></li>
+  						<li class="inline-block left"><a href="" title="拿破仑">拿破仑</a></li>
+  						<li class="inline-block left"><a href="" title="三国演义">三国演义</a></li>
+  						<li class="inline-block left"><a href="" title="水浒传">水浒传</a></li>
+  						<li class="inline-block left"><a href="" title="纳粹枭雄—第三帝国的元帅">纳粹枭雄—第三帝国的元帅</a></li>
+  						<li class="inline-block left"><a href="" title="山本五十六">山本五十六</a></li>
+  						<li class="inline-block left"><a href="" title="独眼将军达扬">独眼将军达扬</a></li>
+  						<li class="inline-block left"><a href="" title="冰海红魔伍德沃德">冰海红魔伍德沃德</a></li>
+  						<li class="inline-block left"><a href="" title="彭德怀自述">彭德怀自述</a></li>
   					</ul>
   				</li>
-  				<li class="menu-title">阅读推广
+  				<li class="menu-title">经济类
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="好书推荐">好书推荐</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆文化艺术展览">文化长廊</a></li>
-  						<li class="inline-block left"><a href="" title="读书节">读书节</a></li>
-  						<li class="inline-block left"><a href="" title="书友会">书友会</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆活动、资源培训">读者教育</a></li>
+  						<li class="inline-block left"><a href="" title="伟大的博弈">伟大的博弈</a></li>
+  						<li class="inline-block left"><a href="" title="苹果橘子经济学"> 苹果橘子经济学</a></li>
+  						<li class="inline-block left"><a href="" title="诚信的背后">诚信的背后</a></li>
+  						<li class="inline-block left"><a href="" title="被掩盖的经济学真相">被掩盖的经济学真相</a></li>
+  						<li class="inline-block left"><a href="" title="美国货币史">美国货币史</a></li>
+  						<li class="inline-block left"><a href="" title="经济学的思维方式">经济学的思维方式</a></li>
   					</ul>
   				</li>
-  				<li class="menu-title">交流互动
+  				<li class="menu-title">文化类
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="为图书馆荐购好书">读者荐购</a></li>
-  						<li class="inline-block left"><a href="" title="图书捐赠">图书捐赠</a></li>
-  						<li class="inline-block left"><a href="" title="常见问题">常见问题</a></li>
-  						<li class="inline-block left"><a href="" title="馆长信箱">馆长信箱</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆勤工俭学">图书馆勤工俭学</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆学生管理委员会">图书馆学生管理委员会</a></li>
+  						<li class="inline-block left"><a href="" title="论语">论语</a></li>
+  						<li class="inline-block left"><a href="" title="物种起源">物种起源</a></li>
+  						<li class="inline-block left"><a href="" title="全球通史">全球通史</a></li>
+  						<li class="inline-block left"><a href="" title="史记">史记</a></li>
+  						<li class="inline-block left"><a href="" title="红与黑">红与黑</a></li>
+  						<li class="inline-block left"><a href="" title="红楼梦">红楼梦</a></li>
   					</ul>
   				</li>
-  				<li class="menu-title">本馆概况
+  				<li class="menu-title">历史类
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="本馆介绍">本馆介绍</a></li>
-  						<li class="inline-block left"><a href="" title="部门设置">部门设置</a></li>
-  						<li class="inline-block left"><a href="" title="开放时间">开放时间</a></li>
-  						<li class="inline-block left"><a href="" title="馆藏分布">馆藏分布</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆规章制度">读者须知</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆服务报告">服务报告</a></li>
+  						<li class="inline-block left"><a href="" title="白话本国史">白话本国史</a></li>
+  						<li class="inline-block left"><a href="" title="国史大纲">国史大纲</a></li>
+  						<li class="inline-block left"><a href="" title="中国史纲">中国史纲</a></li>
+  						<li class="inline-block left"><a href="" title="春秋史">春秋史</a></li>
+  						<li class="inline-block left"><a href="" title="秦汉史">秦汉史</a></li>
+  						<li class="inline-block left"><a href="" title="隋唐史">隋唐史</a></li>
   					</ul>
   				</li>
-  				<li class="menu-title">馆员园地
+  				<li class="menu-title">政治类
   					<ul class="submenu">
-  						<li class="inline-block left"><a href="" title="直属单位党总支">党建之家</a></li>
-  						<li class="inline-block left"><a href="" title="直属单位工会">工会活动</a></li>
-  						<li class="inline-block left"><a href="" title="图书馆办公邮箱">办公邮箱</a></li>
+  						<li class="inline-block left"><a href="" title="西方政治思想史">西方政治思想史</a></li>
+  						<li class="inline-block left"><a href="" title="剑桥中世纪政治思想史">剑桥中世纪政治思想史</a></li>
+  						<li class="inline-block left"><a href="" title="大棋局">大棋局</a></li>
+  						<li class="inline-block left"><a href="" title="菲律宾的腐败">菲律宾的腐败</a></li>
+  						<li class="inline-block left"><a href="" title="民国的四次选举">民国的四次选举</a></li>
+  						<li class="inline-block left"><a href="" title="小议台湾土改">小议台湾土改</a></li>
   					</ul>
   				</li>
   			</ul>
