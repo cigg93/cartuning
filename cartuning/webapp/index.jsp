@@ -12,15 +12,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <link rel="shortcut icon" href="<%=basePath%>themes/favicon.ico" /> 
-  <title>个人图书馆</title> 
+  <title>个人图书</title> 
   <script src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
   <script src="<%=basePath%>js/index.js"></script>
   <link rel="stylesheet" href="<%=basePath%>css/index.css" media="all" /> 
-  <script type="text/javascript">
-  	$(function(){
-  		
-  	})
-  </script>
 </head> 
 <body> 
   <header class="inline-block"> 
@@ -30,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		   </div>
 		   <div class="right">
 		   		<ul class="sub-nav">
-		   			<li class="search-block"><i class="icon icon-search"></i>站内搜索
+		   			<li class="search-block"><i class="icon icon-search"></i>搜索
 		   				<div class="sub-search inline-block">
 		   					<form id="search-block-form" action="" method="get" accept-charset="UTF-8">
 		   						<div>
@@ -131,12 +126,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		  	</ul>
 		  	<div class="tab-content">
 		  		<div id="gcss" class="tab-pane active">
-		  			<form action="" target="_self">
+		  			<form action="<%=basePath%>jsp/opac/search.jsp" target="_blank">
 		  				<input class="input" type="text" placeholder="请输入关键字检索所有书目" name="q0" maxlength="80">
-		  				<input type="hidden" name="sType0" value="any">
-		  				<input type="hidden" name="pageSize" value="100">
-		  				<input type="hidden" name="sort" value="score">
-		  				<input type="hidden" name="desc" value="true">
 		  				<input type="submit" class="btn-search" value="">
 		  			</form>
 		  		</div>

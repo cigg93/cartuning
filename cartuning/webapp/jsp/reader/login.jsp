@@ -10,13 +10,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <base href="<%=basePath%>">
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>图书馆书目检索系统 </title>
-<link type="text/css" rel="stylesheet" href="css/libary.css">
-<link type="text/css" rel="stylesheet" href="css/mylibary.css" />
-<link type="text/css" rel="stylesheet" href="css/jquery-ui-1.8.13.custom.css">
-<script  type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script  type="text/javascript" src="js/jquery-ui-1.8.13.custom.min.js"></script>
-<!-- <script  type="text/javascript" src="js/highlighter.js"></script> -->
+<title>书目检索</title>
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/libary.css">
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/mylibary.css" />
+<link type="text/css" rel="stylesheet" href="<%=basePath%>css/jquery-ui-1.8.13.custom.css">
+<script  type="text/javascript" src="<%=basePath%>js/jquery-3.1.1.min.js"></script>
+<script  type="text/javascript" src="<%=basePath%>js/jquery-ui-1.8.13.custom.min.js"></script>
 <script type="text/javascript">
 	$.fn.serializeObject = function()    
 	{    
@@ -55,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div id="header_opac">
 	<h1 class="header_opac_img">
     <div class="header_opac_logo">
-    	图书馆书目检索系统<br>
+    	书目检索<br>
         <p>Online Public Access Catalogue</p>
         
     </div>
@@ -63,19 +62,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="header_right header_right_top">
       <p class="header_right_font">       </p>
       <p style="margin-top:60px;" class="header_right_font">
-        <a href="jsp/opac/book_cart.jsp">暂存书架(<span id="bookcartCount">0</span>)</a> | <font color="blue"></font> <a href="jsp/reader/login.jsp" style="color:#ff0000;">登录</a></p>
+        <font color="blue"></font> <a href="jsp/reader/login.jsp" style="color:#ff0000;">登录</a></p>
        </div>
 </div>
 <div id="menubar">
     <ul id="menu_top">
     		  	<li><a href="jsp/opac/search.jsp" target="_self" >书目检索</a></li>
-	  		  	<li><a href="jsp/top/top_lend.jsp" target="_self" >热门推荐</a></li>
 	  		  	<li><a href="jsp/browse/cls_browsing.jsp" target="_self" >分类浏览</a></li>
-	  		  	<li><a href="jsp/newbook/newbook_cls_browse.jsp" target="_self" >新书通报</a></li>
-	  		  	<li><a href="jsp/peri/peri_nav_e.jsp" target="_self" >期刊导航</a></li>
-	  		  	<li><a href="jsp/asord/asord_hist.jsp" target="_self" >读者荐购</a></li>
-	  		  	<li><a href="jsp/shelf/curriculum.jsp" target="_self" >学科参考</a></li>
-	  		  	<li><a href="jsp/info/info_guide.jsp" target="_self" >信息发布</a></li>
 	  		  	<li><a class="menu_top_on" href="jsp/reader/redr_info.jsp" target="_self" >我的图书馆</a></li>
 	  		  	         <div class="clear"></div>
     </ul>

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$('.menu-title').mouseover(function() {
 		var submenu = $(this).children(".submenu");
 		submenu.css({"width":"650px"});;

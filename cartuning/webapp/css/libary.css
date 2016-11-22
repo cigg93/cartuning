@@ -133,7 +133,7 @@ legend {
 	margin: auto;
 	text-align: right;
 	padding: 5px 0 0 5px;
-	background: url(../library/icon.png) repeat-x;
+	background: url('http://localhost:8080/cartuning/library/icon.png') repeat-x;
 	background-position: 0 -138px;
 	background-color: #b9201b;
 	width: 975px;
@@ -187,7 +187,7 @@ h2 p {
 }
 
 .logo {
-	background-image: url(../library/icon.png);
+	background-image: url('http://localhost:8080/cartuning/library/icon.png');
 	background-repeat: no-repeat;
 	background-position: 0 -35px;
 	height: 38px;
@@ -209,7 +209,7 @@ h2 p {
 	font-family: "宋体";
 	font-weight: bold;
 	padding: 10px 0 0 80px;
-	background-image: url(../library/logo.jpg);
+	background-image: url('http://localhost:8080/cartuning/library/logo.jpg');
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	height: 40px;
@@ -218,7 +218,7 @@ h2 p {
 #menubar {
 	width: 100%;
 	height: 25px;
-	background-color: #13599f;
+	background-color: #ffff80;
 	clear: both;
 	text-align: left;
 	margin: 0 auto;
@@ -226,16 +226,12 @@ h2 p {
 	overflow: hidden;
 	background-color: #0074cc;
 	background-image: -moz-linear-gradient(top, #0088cc, #0055cc);
-	background-image: -ms-linear-gradient(top, #0088cc, #0055cc);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0055cc));
 	background-image: -webkit-linear-gradient(top, #0088cc, #0055cc);
-	background-image: -o-linear-gradient(top, #0088cc, #0055cc);
 	background-image: linear-gradient(top, #0088cc, #0055cc);
 	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
 	border-color: #0055cc #0055cc #003580;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
 #menu_top {
@@ -332,7 +328,7 @@ h2 p {
 	width: 100%;
 	height: 110px;
 	background: #fff;
-	background-image: url(../library/headerBg.jpg);
+	background-image: url('http://localhost:8080/cartuning/library/headerBg.jpg');
 	background-repeat: repeat-x;
 	margin: auto;
 	padding: 0;
@@ -345,7 +341,6 @@ h2 p {
 }
 
 .header_opac_logo {
-	background-image: url(../library/ilib_logo.png);
 	background-repeat: no-repeat;
 	height: 60px;
 	text-align: left;
@@ -392,7 +387,7 @@ h2 p {
 }
 
 .header_opac_img {
-	background-image: url(../library/header_img02.jpg);
+	background-image: url('http://localhost:8080/cartuning/library/header_img02.jpg');
 	background-position: right;
 	background-repeat: no-repeat;
 	height: 110px;
@@ -446,7 +441,7 @@ h2 p {
 	font-size: 12px;
 	font-weight: bold;
 	color: #333;
-	background-image: url(../library/tit_bg_gary.jpg);
+	background-image: url('http://localhost:8080/cartuning/library/tit_bg_gary.jpg');
 	background-repeat: repeat-x;
 	border-bottom: 1px solid #d7d7d7;
 	padding: 5px;
@@ -498,7 +493,7 @@ h2 p {
 
 /*-----SearchBookList-----*/
 .search_bgimg {
-	background-image: url(../images/header_img03.jpg);
+	background-image: url('http://localhost:8080/cartuning/images/header_img03.jpg');
 	background-position: top right;
 	background-repeat: no-repeat;
 	padding: 50px 20px;
@@ -1190,7 +1185,7 @@ h2 p {
 }
 
 .comment_icon {
-	background-image: url(../images/icon_comment.gif);
+	background-image: url('http://localhost:8080/cartuning/images/icon_comment.gif');
 	background-repeat: no-repeat;
 	background-position: 2px 3px;
 	padding: 0 0 0 19px;
