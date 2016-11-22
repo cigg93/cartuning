@@ -19,9 +19,14 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	    <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
 	</settings>
 	
+	<typeAliases>
+		<typeAlias type="com.cc.library.entity.BookCatagory" alias="bookCatagory"/>
+	</typeAliases>
+	
 	<!-- 映射文件，mapper的配置文件 -->  
     <mappers>
 		<!--直接映射到相应的mapper文件-->
+		<mapper resource="sqlMap/BookCatagory.xml"/>
 	</mappers>
 	
 </configuration>
