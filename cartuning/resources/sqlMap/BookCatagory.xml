@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BookCatagory">
+
+	<resultMap type="bookCatagory" id="result_catagory">
+		<result column="id" property="id"/>
+		<result column="cataforyName" property="cataforyName"/>
+	</resultMap>
+	
+	<!-- 获取书的类别名称列表 -->
+	<select id="getCatagorys" resultMap="result_catagory">
+		select id,catafory_name cataforyName
+		from t_book_catagory
+	</select>
+	
+</mapper>
